@@ -1,0 +1,249 @@
+<html lang="es">
+<head>
+    <title>MY portfolio - CMA</title>
+    <meta charset="UTF-8">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <!-- <div class="logo"><img src="img/pin.png" alt="Balerion Robotics Logo" class="logo-img"></div> -->
+            <h2>My Portfolio</h2>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">AboutMe</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#skillset">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Hamburger Menu -->
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>  
+
+    <main>
+        <!-- Hero -->     
+        <section id="hero" class="hero">
+            <div class="description">
+                <h1>Let's work together for technological and innovative solutions</h1>
+                <p>Electronics, Frontend Development and AI.</p>
+                <p>Innovating and improving processes is my way of working.</p>
+                <a href="#contact" class="button">Contact Me</a>
+            </div>
+            <div class="figure">
+                <img src="img/cma.jpg" alt="my photo">
+            </div>
+        </section>
+
+        <!-- About Me -->     
+        <section id="about" class="about">
+            <div class="about1">
+                <h2>About Me</h2>
+                <p>
+                    Mecatrónico Industrial y estudiante de sistemas informáticos, apasionado por las nuevas tecnologías y la electrónica.
+                    Estoy en constante aprendizaje y capacitaciones en áreas como la electrónica, programación, 
+                    desarrollo web, gestión, mantenimiento, entre otros.
+                </p>
+            </div>
+            <div class="about2">
+                <h2></h2>
+                <p>
+                    Gracias a mi formación híbrida y constante en hardware y software, he podido desempeñarme en áreas 
+                    como la industria, equipos de laboratorio, análisis funcional ERP, base de datos (básico), entre otros.
+                    Pasión por brindar soluciones smart, además de emplear IA como partner colaborativo para desarrollo web 
+                    y mantenimiento técnico. Mis conocimientos:
+                </p>
+                <ul>
+                    <li>Electrónica y Microcontroladores</li>
+                    <li>Desarrollo Frontend Jr.</li>
+                    <li>Soporte TI / Mantenimiento Técnico</li>
+                    <li>Diseño 3D</li>
+                    <li>Base de Datos (básico)</li>
+                </ul>
+                <p>
+                    El trabajo que entrego es de calidad, siempre apendiendo, siempre mejorando.
+                </p>
+            </div>
+        </section>
+
+        <!-- Work -->
+        <section id="works" class="works">
+            <h2>WORKS</h2>
+            <div class="cards">
+                <!-- Work 1: Web Site -->
+                <div class="work">
+                    <img src="img/balerion.jpeg" alt="Web Site">
+                    <h3>
+                        Web Site
+                    </h3>
+                    <p>
+                        Mini e-Commerce estático para venta de robots. Adaptable a otros negocios. (HTML - CSS - JS)
+                    </p>
+                    <div class="buttons">
+                        <a href="https://balerionrobotics.netlify.app/" target="_blank" class="btn">Page</a>
+                        <a href="https://github.com/Rhaeger02/balerionrobotics" target="_blank" class="btn">Code</a>
+                    </div>
+                </div>
+                
+                <!-- Work 2: Landing Page -->
+                <div class="work">
+                    <img src="img/veterinary.jpeg" alt="Landing Page">
+                    <h3>
+                        Landing Page
+                    </h3>
+                    <p>
+                        Página web corporativa para clínica veterinaria real ubicada en SMP (Lima, Perú). (REACT)
+                    </p>
+                    <div class="buttons">
+                        <a href="https://veterinariajosegranda.netlify.app/" target="_blank" class="btn">Page</a>
+                        <a href="https://github.com/Rhaeger02/vetjosegrandareact" target="_blank" class="btn">Code</a>
+                    </div>
+                </div>
+
+                <!-- Work 3: ESP32 -->
+                <div class="work">
+                    <img src="img/esp32-proyecto.jpg" alt="ESP32">
+                    <h3>
+                        Miniestación Meteorológica - ESP32
+                    </h3>
+                    <p>
+                        Miniestación meteorológica para recepción y muestra de datos en tiempo real.
+                    </p>
+                    <div class="buttons">
+                        <a href="#" class="btn open-modal-btn" data-video="vid/vid1.mp4">Video</a>
+                        <a href="https://github.com/Rhaeger02/est-meteo-esp32" target="_blank" class="btn">Code</a>
+                    </div>
+                </div>
+
+                <!-- Work 4: Arduino -->
+                <div class="work">
+                    <img src="img/arduino-proyecto.jpg" alt="Arduino">
+                    <h3>
+                        Radar - Arduino
+                    </h3>
+                    <p>
+                        Radar hecho con un sensor, un servomotor y Arduino con muestra de datos en pantalla oled.
+                    </p>
+                    <div class="buttons">
+                        <a href="#" class="btn open-modal-btn" data-video="vid/vid2.mp4">Video</a>
+                        <a href="https://github.com/Rhaeger02/radar-hcsr04-oled" target="_blank" class="btn">Code</a>
+                    </div> 
+                </div>
+            </div>    
+        </section>
+
+        <!-- Skillset -->
+        <section id="skillset" class="skillset">
+            <h2>SKILLSET</h2> 
+            <div class="skills">
+                <!-- ESP32 -->
+                <div>
+                    <img src="img/esp32.png" alt="ESP32">
+                    <h3>ESP32</h3>
+                </div>
+
+                <!-- HTML -->
+                <div>
+                    <img src="img/html.png" alt="HTML">
+                    <h3>HTML</h3>
+                </div>
+
+                <!-- CSS -->
+                <div>
+                    <img src="img/css.png" alt="CSS">
+                    <h3>CSS</h3>
+                </div>
+
+                <!-- JS -->
+                <div>
+                    <img src="img/js.png" alt="JS">
+                    <h3>JS</h3>
+                </div>
+
+                <!-- REACT -->
+                <div>
+                    <img src="img/react.png" alt="REACT">
+                    <h3>REACT</h3>
+                </div>
+
+                <!-- ARDUINO -->
+                <div>
+                    <img src="img/arduino.png" alt="ARDUINO">
+                    <h3>ARDUINO</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <h2>CONTACT ME</h2>
+            <div class="callme">
+                <div class="figure">
+                    <img src="img/avatar.jpeg" alt="avatar">
+                    <p>
+                        Gracias por ver mi portafolio digital. No duden en escribirme, quién sabe si 
+                        diseñemos la tecnología del futuro.
+                    </p>
+                </div>
+                <div class="talk">
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/cmendozaa94/" target="_blank">
+                            <img src="img/linkedin.png" class="linkd" alt="Linkedin">
+                        </a>
+                        <p>
+                            linkedin.com/in/cmendozaa94/
+                        </p>
+                    </div>
+                    <div class="whatsapp">
+                        <a href="https://wa.me/51982406966" target="_blank">
+                            <img src="img/whatsapp.png" class="wsp" alt="WhatsApp">
+                        </a>
+                        <p>
+                            +51 982 406 966
+                        </p>
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/Rhaeger02" target="_blank">
+                            <img src="img/github.png" class="git" alt="Github">
+                        </a>
+                        <p>
+                            github.com/Rhaeger02
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+          Ø Carlos H. Mendoza Arévalo | My Portfolio
+        </p>
+    </footer>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <video id="videoPlayer" controls>
+                <source src="" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </div>
+    </div>
+
+    <!-- Link to JS -->
+    <script src="script.js"></script>
+    <script src="vid.js"></script>
+
+</body>
+</html>
