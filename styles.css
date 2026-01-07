@@ -509,7 +509,7 @@ footer {
     .hero {
         flex-direction: column;
         text-align: center;
-        padding-top: 80px;
+        padding-top: 100px;
         gap: 30px;
     }
     
@@ -622,7 +622,7 @@ footer {
     
     /* Hero */
     .hero {
-        padding-top: 60px;
+        padding-top: 80px;
     }
     
     .hero .figure img {
@@ -705,7 +705,7 @@ footer {
     
     /* Hero */
     .hero {
-        padding-top: 40px;
+        padding-top: 70px;
     }
     
     .hero .figure img {
