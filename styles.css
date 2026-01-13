@@ -221,8 +221,8 @@ section {
 .works .cards .work {
     display: flex;
     flex-direction: column;
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 500px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -231,6 +231,10 @@ section {
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.7);
     overflow: hidden;
     transition: 0.3s ease;
+}
+
+.works .cards .work:hover {
+    transform: translateY(-5px)
 }
 
 .works .cards .work img {
@@ -371,8 +375,7 @@ section {
 }
 
 .skills > div:hover{
-    width: 155px;
-    height: 205px;
+    transform: translateY(-5px)
 }
 
 /* CONTACT */ 
