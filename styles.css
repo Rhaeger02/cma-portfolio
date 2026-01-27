@@ -565,6 +565,11 @@ footer {
         justify-content: center;
         align-items: center;
     }
+    
+    #form {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
 /* CELULARES HABITUALES (768px) */
@@ -644,9 +649,15 @@ footer {
     .contact .contact-container {
         display: flex;
         flex-direction: column;
-        gap: 100px;
+        gap: 20px;
         justify-content: center;
         align-items: center;
+        padding: 10px;
+    }
+    
+    #form {
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
@@ -741,8 +752,13 @@ footer {
     .contact .contact-container {
         display: flex;
         flex-direction: column;
-        gap: 100px;
+        gap: 20px;
         justify-content: center;
         align-items: center;
+    }
+    
+    #form {
+        width: 90%;
+        margin: 0 auto;
     }
 }
