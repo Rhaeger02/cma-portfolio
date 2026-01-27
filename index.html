@@ -5,9 +5,14 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('7nhShuWoEwAxeTnON')</script>
 
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +43,7 @@
                 <h1>Let's work together for technological and innovative solutions</h1>
                 <p>Electronics, Frontend Development and AI.</p>
                 <p>Innovating and improving processes is my way of working.</p>
-                <a href="#contact" class="button">Contact Me</a>
+                <a href="#contact" class="boton">Contact Me</a>
             </div>
             <div class="figure">
                 <img src="img/cma.jpg" alt="my photo">
@@ -162,8 +167,9 @@
                         Radar
                     </h3>
                     <p>
-                        Radar que mide distancias en rango visible y zona de peligro . (Arduino)
+                        Radar que mide distancias en rango visible y zona de peligro.
                     </p>
+                    <img class="icon" src="img/arduino.png" alt="ARDUINO">
                     <div class="buttons">
                         <a href="#" class="btn open-modal-btn" data-video="vid/vid2.mp4">Video</a>
                         <a href="https://github.com/Rhaeger02/radar-hcsr04-oled" target="_blank" class="btn">Code</a>
@@ -217,50 +223,38 @@
         <!-- Contact -->
         <section id="contact" class="contact">
             <h2>CONTACT ME</h2>
-            <div class="callme">
-                <div class="figure">
-                    <img src="img/avatar.jpeg" alt="avatar">
-                    <p>
-                        Gracias por ver mi portafolio digital. No duden en contactarme. ¡Construyamos
-                        el futuro desde hoy!
-                    </p>
-                </div>
-                <div class="talk">
-                    <!-- Linkedin -->
-                    <div class="linkedin">
-                        <a href="https://www.linkedin.com/in/cmendozaa94/" target="_blank">
-                            <img src="img/linkedin.png" class="linkd" alt="Linkedin">
-                        </a>
-                        <p>
-                            linkedin.com/in/cmendozaa94/
-                        </p>
+            <div class="contact-container">
+                <!-- Form -->
+                <form id="form">
+                    <input type="text"  name="name"         id="name"       placeholder="Nombre y Apellido"     required>
+                    <input type="tel"   name="cellphone"    id="cellphone"  placeholder="Teléfono"              required>
+                    <input type="email" name="email_id"     id="email_id"   placeholder="Correo electrónico"    required>
+                    <textarea type="text" name="message"    id="message"    placeholder="Tu mensaje" rows="5"   required></textarea>
+                    <input type="submit" id="button" class="button" value="Send Email">
+                    <div id="message-success">
+                        Mensaje Enviado.
                     </div>
-                    <!-- Telephone/WhatsApp -->
-                    <div class="whatsapp">
-                        <a href="https://wa.me/51927039941" target="_blank">
-                            <img src="img/telephone.jpg" class="wsp" alt="WhatsApp">
+                </form>
+
+                <!-- Social Media -->
+                <div class="socialmedia">
+                    <h3>Contáctame</h3>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/cmendozaa94/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin"></i>
                         </a>
-                        <p>
-                            +51 982 406 966
-                        </p>
-                    </div>
-                    <!-- Github -->
-                    <div class="github">
-                        <a href="https://github.com/Rhaeger02" target="_blank">
-                            <img src="img/github.png" class="git" alt="Github">
+
+                        <a href="https://wa.me/927039941" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp"></i>
                         </a>
-                        <p>
-                            github.com/Rhaeger02
-                        </p>
-                    </div>
-                    <!-- Odysee -->
-                    <div class="odysee">
-                        <a href="https://odysee.com/@BalerionDevStudios:b?view=content" target="_blank">
-                            <img src="img/odysee.png" class="ody" alt="Github">
+
+                        <a href="https://github.com/Rhaeger02" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
                         </a>
-                        <p>
-                            odysee.com/@BalerionDevStudios
-                        </p>
+
+                        <a href="https://odysee.com/@BalerionDevStudios:b?view=content" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -284,8 +278,9 @@
     </div>
 
     <!-- Link to JS -->
-    <script src="script.js"></script>
-    <script src="vid.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/email.js"></script>
+    <script src="js/vid.js"></script>
 
 </body>
 </html>

@@ -104,7 +104,7 @@ section {
     gap: 10px;
 }
 
-.button {
+.boton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +120,7 @@ section {
     transition: 0.3s ease;
 }
 
-.button:hover {
+.boton:hover {
     width: 210px;
     height: 45px;
     background-color: #ffed00;
@@ -231,6 +231,12 @@ section {
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.7);
     overflow: hidden;
     transition: 0.3s ease;
+}
+
+.works .cards .work .icon {
+    width: 70px;
+    height: 70px;
+    padding: 10px ;
 }
 
 .works .cards .work:hover {
@@ -393,96 +399,87 @@ section {
     text-underline-offset: 4px;
 }
 
-.contact .callme {
+.contact .contact-container {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    gap: 50px;
-}
-
-/* CONTACT - PHOTO */
-.callme .figure {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+    gap: 100px;
     justify-content: center;
     align-items: center;
-    padding: 0 100px 0;
 }
 
-.callme .figure img {
-    width: 300px;
-    height: auto;
-    border-radius: 20px;
+.contact-container form {
+    flex: 2;
 }
 
-.callme .figure p {
-    color: #00ffff;
-    text-align: center;
+.contact-container .socialmedia {
+    flex: 1;
 }
 
-/* CONTACT - COMMUNICATION LINKS*/
-.callme .talk {
+/* CONTACT: FORM */
+.contact-container form {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    justify-content: center;
-    align-items: left;
-    gap: 30px;
+    gap: 15px;
 }
 
-.talk > div {
+.contact-container input, .contact-container textarea {
+    padding: 12px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: #ffffff;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+#form #button {
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+
+#form #button:hover {
+    background-color: #ccc;
+}
+
+/* MESSAGE */
+#message-success {
+    display: none; /* Hidden by default */
+    color: #00ffff;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(0, 255, 255, 0.1);
+    border-left: 4px solid #00ffff;
+    font-weight: bold;
+    animation: aparecer 0.4s ease-out forwards;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* CONTACT: ICONS */
+.icons {
     display: flex;
-    flex-direction: row;
-    gap: 30px;
+    gap: 20px;
 }
 
-.linkedin .linkd {
-    width: 80px;
-    height: auto;
-    border-radius: 20px;
-    transition: 0.3s ease;
+.icons i {
+    color: white;
+    font-size: 40px; 
+    transition: 0.3s;
 }
 
-.whatsapp .wsp {
-    width: 80px;
-    height: auto;
-    border-radius: 20px;
-    transition: 0.3s ease;
-}
-
-.github .git {
-    width: 90px;
-    height: auto;
-    border-radius: 20px;
-    transition: 0.3s ease;
-}
-
-.odysee .ody {
-    width: 85px;
-    height: auto;
-    border-radius: 20px;
-    transition: 0.3s ease;
-}
-
-.linkedin .linkd:hover {
-    width: 85px;
-    height: auto;
-}
-
-.whatsapp .wsp:hover {
-    width: 85px;
-    height: auto;
-}
-
-.github .git:hover {
-    width: 95px;
-    height: auto;
-}
-
-.odysee .ody:hover {
-    width: 90px;
-    height: auto;
+.icons i:hover {
+    color: #00ffff; /* Cambia a Cyan al pasar el mouse */
+    transform: translateY(-5px);
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.6); /* Añade un pequeño resplandor */
 }
 
 /* FOOTER */
@@ -561,27 +558,9 @@ footer {
     }
     
     /* Contact: apilar */
-    .contact .callme {
-        flex-direction: column;
-        gap: 50px;
-    }
-    
-    .callme .figure {
-        padding: 0 50px;
-    }
-    
-    .callme .talk {
+    .contact-container {
         display: flex;
         flex-direction: column;
-        align-items: left;
-        gap: 50px;
-    }
-
-    .talk > div {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 15px;
     }
 }
 
@@ -659,15 +638,9 @@ footer {
     }
     
     /* Contact */
-    .callme .figure img {
-        width: 250px;
-    }
-    
-    .talk > div {
+    .contact-container {
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 10px;
     }
 }
 
@@ -715,13 +688,13 @@ footer {
         width: 100%;
     }
     
-    .button {
+    .boton {
         width: 180px;
         height: 35px;
         font-size: 14px;
     }
     
-    .button:hover {
+    .boton:hover {
         width: 185px;
         height: 38px;
     }
@@ -759,27 +732,8 @@ footer {
     }
     
     /* Contact */
-    .callme .figure {
-        padding: 0;
-    }
-    
-    .callme .figure img {
-        width: 200px;
-    }
-
-    .callme .talk {
-        gap: 10px;
-    }
-    
-    .talk > div {
-        margin-bottom: 20px;
-    }
-    
-    .talk img {
-        width: 70px !important;
-    }
-    
-    .talk img:hover {
-        width: 75px !important;
+    .contact-container {
+        display: flex;
+        flex-direction: column;
     }
 }
